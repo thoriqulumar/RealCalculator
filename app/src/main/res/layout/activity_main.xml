@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:gravity="right"
+        android:textSize="40sp"
+        android:ems="10"
+        android:background="@color/colorBackground"
+        android:textColor="#ffffff"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:inputType="textPersonName"
+        android:paddingTop="30dp"
+        android:paddingBottom="200dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="4"
+       android:gravity="center"
+       android:layout_marginTop="10dp">
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="75dp"
+           android:layout_weight="1"
+           android:text="AC"
+           android:textSize="24sp"
+           android:onClick="buttonClean"
+           android:id="@+id/btnAC"
+           android:background="@drawable/button_top" />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="75dp"
+           android:layout_weight="1"
+           android:text="+/-"
+           android:onClick="buttonMain"
+           android:textSize="24sp"
+           android:id="@+id/btnNegative"
+           android:background="@drawable/button_top"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="75dp"
+           android:text="%"
+           android:id="@+id/btnPersen"
+           android:textSize="24sp"
+           android:layout_weight="1"
+           android:onClick="buttonPercent"
+           android:background="@drawable/button_top"/>
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="75dp"
+           android:layout_weight="1"
+           android:textSize="24sp"
+           android:id="@+id/btnDiv"
+           android:text="/"
+           android:onClick="buttonOperation"
+           android:background="@drawable/button_vertical"/>
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="buttonMain"
+            android:id="@+id/btn7"
+            android:background="@drawable/button_main"
+            android:textSize="24sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="buttonMain"
+            android:id="@+id/btn8"
+            android:textSize="24sp"
+            android:background="@drawable/button_main" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="9"
+            android:textSize="24sp"
+            android:id="@+id/btn9"
+            android:layout_weight="1"
+            android:onClick="buttonMain"
+            android:background="@drawable/button_main"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="X"
+            android:id="@+id/btnKali"
+            android:onClick="buttonOperation"
+            android:background="@drawable/button_vertical"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="24sp"
+            android:onClick="buttonMain"
+            android:id="@+id/btn4"
+            android:background="@drawable/button_main" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:id="@+id/btn5"
+            android:text="5"
+            android:textSize="24sp"
+            android:onClick="buttonMain"
+            android:background="@drawable/button_main"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="6"
+            android:textSize="24sp"
+            android:onClick="buttonMain"
+            android:layout_weight="1"
+            android:id="@+id/btn6"
+            android:background="@drawable/button_main"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:id="@+id/btnMin"
+            android:onClick="buttonOperation"
+            android:textSize="30sp"
+            android:text="-"
+            android:background="@drawable/button_vertical"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:onClick="buttonMain"
+            android:id="@+id/btn1"
+            android:text="1"
+            android:background="@drawable/button_main"
+            android:textSize="24sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:id="@+id/btn2"
+            android:onClick="buttonMain"
+            android:background="@drawable/button_main"
+            android:textSize="24sp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="3"
+            android:id="@+id/btn3"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:onClick="buttonMain"
+            android:background="@drawable/button_main"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="+"
+            android:id="@+id/btnPlus"
+            android:onClick="buttonOperation"
+            android:background="@drawable/button_vertical"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="2"
+            android:text="0"
+            android:onClick="buttonMain"
+            android:id="@+id/btn0"
+            android:background="@drawable/button_main"
+            android:textSize="24sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="."
+            android:onClick="buttonMain"
+            android:id="@+id/btnTitik"
+            android:background="@drawable/button_main"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="="
+            android:onClick="buttonSum"
+            android:id="@+id/btnSum"
+            android:background="@drawable/button_vertical"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
